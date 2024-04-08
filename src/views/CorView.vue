@@ -31,7 +31,7 @@ function editar(cor_para_editar) {
 
 async function excluir(id) {
   await coresApi.excluirCor(id);
-  cores.value = await coresApi.buscarTodasAscores();
+  cores.value = await coresApi.buscarTodasAsCores();
   limpar();
 }
 </script>
